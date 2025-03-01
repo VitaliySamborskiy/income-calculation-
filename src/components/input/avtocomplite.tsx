@@ -16,6 +16,8 @@ function AutoCompleteFunk({ data }: { data: DataAutoComplete }) {
 		<div className={`d-flex gap-2 flex-column ${data.classBlock}`}>
 			<label className="text-white">{data.label}</label>
 			<AutoComplete
+				inputId={"nameProduct"}
+				name={"name"}
 				value={selectedSkin}
 				suggestions={filterSkins}
 				completeMethod={searchSkin}
